@@ -2,35 +2,23 @@
 	"schemaVersion": 1,
 	"id": "${modid}",
 	"version": "${version}",
-	"name": "MixinOnlyTemplate",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Fix Yungs Better End Island Mod",
+	"description": "Tries to fix the badly coded Better End Island Mod",
 	"authors": [
 		"Me!"
 	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/mixinonlytemplate/icon.png",
+	"license": "MIT",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-		],
-		"client": [
 		]
 	},
 	"mixins": [
-		"mixinonlytemplate.mixins.json",
-		{
-			"config": "mixinonlytemplate.client.mixins.json",
-			"environment": "client"
-		}
+      "fix-yung-end.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=${loader_version}",
 		"minecraft": "~${minecraft_version}",
-		"java": ">=17",
-		"fabric-api": "*"
+		"java": ">=17"
 	}
 }
